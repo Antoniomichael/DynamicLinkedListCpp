@@ -1,7 +1,7 @@
 #include <iostream>
 #include <exception>
 #include <string>
-#include <conio.h>
+
 #include "Employeelist.h"
 
 using namespace std;
@@ -23,8 +23,8 @@ int main()
 		string fn, ln, d;
 		bool stat = true;
 
-		//do
-		//{
+		do
+		{
 			check = displayMEnu();
 			//cin.get();
 			switch (check)
@@ -67,7 +67,7 @@ int main()
 				break;
 
 			}
-		//} while (true);
+		} while (check!= 3);
 		
 	return 0;
 }
